@@ -5,4 +5,6 @@ body {
   background-size: contain; /* Ensures full image is visible */
   background-repeat: no-repeat;
   background-position: center;
+  max-width:1600px;
+  max-height:900px;
 }
