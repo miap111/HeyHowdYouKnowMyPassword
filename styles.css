@@ -1,5 +1,5 @@
 body {
-  background-color: hex="#eae8eb"
+  background-color: #eae8eb;
   background-attachment: fixed;
   background-image: url("compbackground.png");
   background-size: contain; /* Ensures full image is visible */
