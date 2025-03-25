@@ -1,6 +1,6 @@
 body {
   background-image: url("compbackground.png");
-  background-size: contain;
+  background-size: center;
   background-position: top center;
   background-repeat: no-repeat;
 }
