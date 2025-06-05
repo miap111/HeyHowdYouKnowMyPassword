@@ -22,6 +22,6 @@ html, body {
 }
 @media (max-width: 768px) {
   .map-img {
-    margin-top: 20px;
+    margin-top: 300px;
   }
 }
