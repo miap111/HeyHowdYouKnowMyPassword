@@ -1,17 +1,20 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   padding: 0;
   background-color: #eae8eb;
-  overflow-x: hidden;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
+  overflow-x: hidden; /* Prevent side scroll */
+  font-family: sans-serif;
 }
 
-.img-container {
+.container {
   max-width: 100%;
-  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
 }
 
 .responsive-img {

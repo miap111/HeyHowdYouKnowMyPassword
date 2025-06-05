@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <div class="img-container">
+  <div class="container">
     <img src="compp.png" alt="Portfolio Map" usemap="#portfoliomap" class="responsive-img" />
 
     <map name="portfoliomap">
@@ -18,5 +18,13 @@
       <area shape="rect" coords="1657,701,1956,956" href="credentials/credentials.html" alt="Credentials">
     </map>
   </div>
+
+  <!-- Load polyfill for responsive image maps -->
+  <script src="https://cdn.jsdelivr.net/npm/image-map-resizer@1.0.10/js/imageMapResizer.min.js"></script>
+  <script>
+    window.addEventListener('DOMContentLoaded', () => {
+      imageMapResize(); // Auto-adjust clickable areas to match resized image
+    });
+  </script>
 </body>
 </html>
