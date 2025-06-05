@@ -1,109 +1,21 @@
-/* GENERAL SETUP */
-html, body {
-  height: 100%;
+body {
   margin: 0;
   padding: 0;
-  overflow-x: hidden;
-}
-
-/* BACKGROUND IMAGE */
-body {
   background-color: #eae8eb;
-  background-image: url("compp.png");
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: contain; /* Keeps full image visible */
-  position: relative;
+  overflow-x: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
 }
 
-/* CONTAINER FOR CLICKABLE AREAS */
-.overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
+.img-container {
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.responsive-img {
   width: 100%;
-  height: 100%;
-  pointer-events: none; /* Allows clicks only on children */
-}
-
-/* BASE STYLES FOR CLICKABLE LINKS */
-.link-zone {
-  position: absolute;
+  height: auto;
   display: block;
-  pointer-events: auto; /* Enables clicking */
-}
-
-/* DESKTOP POSITIONS */
-.casestudies {
-  top: 166px;
-  left: 641px;
-  width: 331px;
-  height: 237px;
-}
-
-.mockups {
-  top: 697px;
-  left: 681px;
-  width: 252px;
-  height: 249px;
-}
-
-.yourstruly {
-  top: 355px;
-  left: 1164px;
-  width: 302px;
-  height: 328px;
-}
-
-.webdesign {
-  top: 193px;
-  left: 1642px;
-  width: 314px;
-  height: 216px;
-}
-
-.credentials {
-  top: 701px;
-  left: 1657px;
-  width: 299px;
-  height: 255px;
-}
-
-/* MOBILE VIEW */
-@media (max-width: 768px) {
-  .casestudies {
-    top: 80px;
-    left: 50px;
-    width: 150px;
-    height: 110px;
-  }
-
-  .mockups {
-    top: 320px;
-    left: 50px;
-    width: 130px;
-    height: 130px;
-  }
-
-  .yourstruly {
-    top: 180px;
-    left: 220px;
-    width: 140px;
-    height: 150px;
-  }
-
-  .webdesign {
-    top: 90px;
-    left: 380px;
-    width: 150px;
-    height: 110px;
-  }
-
-  .credentials {
-    top: 330px;
-    left: 380px;
-    width: 140px;
-    height: 130px;
-  }
 }
