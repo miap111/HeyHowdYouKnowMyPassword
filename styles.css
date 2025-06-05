@@ -1,26 +1,40 @@
-/* GENERAL LAYOUT */
+/* GENERAL SETUP */
 html, body {
+  height: 100%;
   margin: 0;
   padding: 0;
-  width: 100%;
-  height: 100%;
-  position: relative;
+  overflow-x: hidden;
+}
+
+/* BACKGROUND IMAGE */
+body {
   background-color: #eae8eb;
   background-image: url("compp.png");
   background-attachment: fixed;
   background-repeat: no-repeat;
-  background-position: center;
-  background-size: auto;
-  overflow-x: hidden;
+  background-position: center center;
+  background-size: contain; /* Keeps full image visible */
+  position: relative;
 }
 
-/* INVISIBLE LINK ZONES */
+/* CONTAINER FOR CLICKABLE AREAS */
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none; /* Allows clicks only on children */
+}
+
+/* BASE STYLES FOR CLICKABLE LINKS */
 .link-zone {
   position: absolute;
   display: block;
+  pointer-events: auto; /* Enables clicking */
 }
 
-/* DESKTOP SIZES */
+/* DESKTOP POSITIONS */
 .casestudies {
   top: 166px;
   left: 641px;
@@ -56,46 +70,40 @@ html, body {
   height: 255px;
 }
 
-/* MAKE THE LINK ZONES SCALE DOWN ON SMALLER SCREENS */
+/* MOBILE VIEW */
 @media (max-width: 768px) {
   .casestudies {
     top: 80px;
-    left: 140px;
+    left: 50px;
     width: 150px;
     height: 110px;
   }
 
   .mockups {
     top: 320px;
-    left: 140px;
+    left: 50px;
     width: 130px;
     height: 130px;
   }
 
   .yourstruly {
     top: 180px;
-    left: 310px;
+    left: 220px;
     width: 140px;
     height: 150px;
   }
 
   .webdesign {
     top: 90px;
-    left: 500px;
+    left: 380px;
     width: 150px;
     height: 110px;
   }
 
   .credentials {
     top: 330px;
-    left: 500px;
+    left: 380px;
     width: 140px;
     height: 130px;
   }
-}
-
-/* OPTIONAL: REMOVE LINK UNDERLINES ETC */
-a {
-  text-decoration: none;
-  color: inherit;
 }
