@@ -1,13 +1,7 @@
-#container { 
-  width: 90%;
-  position:relative;
-  margin: 0px auto;
-}
-
 body {
   background-color: #eae8eb;
   background-attachment: fixed;
-  background-image: url("compbackground.png");
+  background-image: url("compp.png");
   background-size: contain; /* Ensures full image is visible */
   background-repeat: no-repeat;
   background-position: center;
