@@ -2,23 +2,27 @@
   box-sizing: border-box;
 }
 
-body {
+html, body {
   margin: 0;
   padding: 0;
   background-color: #eae8eb;
   overflow-x: hidden;
   font-family: sans-serif;
+  width: 100%;
 }
 
 .container {
-  max-width: 100%;
   display: flex;
   justify-content: center;
+  align-items: center;
+  max-width: 100vw;
+  overflow-x: hidden;
   padding: 20px 0;
 }
 
 .map-img {
   width: 100%;
+  max-width: 100vw;
   height: auto;
   display: block;
 }
@@ -29,11 +33,5 @@ body {
     padding-top: 20px;
     padding-left: 10px;
     padding-right: 10px;
-  }
-
-  .map-img {
-    width: 100%;
-    height: auto;
-    display: block;
   }
 }
