@@ -20,3 +20,8 @@ html, body {
   margin: 0 auto;
   padding: 20px 0;
 }
+@media (max-width: 768px) {
+  .map-img {
+    margin-top: 20px;
+  }
+}
