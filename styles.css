@@ -6,7 +6,7 @@ body {
   margin: 0;
   padding: 0;
   background-color: #eae8eb;
-  overflow-x: hidden; /* Prevent side scroll */
+  overflow-x: hidden;
   font-family: sans-serif;
 }
 
@@ -14,11 +14,26 @@ body {
   max-width: 100%;
   display: flex;
   justify-content: center;
-  padding: 20px;
+  padding: 20px 0;
 }
 
-.responsive-img {
+.map-img {
   width: 100%;
   height: auto;
   display: block;
+}
+
+/* Mobile padding fix */
+@media (max-width: 768px) {
+  .container {
+    padding-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .map-img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
 }
