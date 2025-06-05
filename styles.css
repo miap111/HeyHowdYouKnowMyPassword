@@ -1,38 +1,101 @@
-body {
+/* GENERAL LAYOUT */
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  position: relative;
   background-color: #eae8eb;
-  background-attachment: fixed;
   background-image: url("compp.png");
-  background-size: contain; /* Ensures full image is visible */
+  background-attachment: fixed;
   background-repeat: no-repeat;
   background-position: center;
-  min-width:1600px;
-  min-height:900px;
-}
-/* unvisited link */
-a:link {
-  color: black;
-  text-decoration: none;
+  background-size: auto;
+  overflow-x: hidden;
 }
 
-/* visited link */
-a:visited {
-  color: black;
-  text-decoration: none;
+/* INVISIBLE LINK ZONES */
+.link-zone {
+  position: absolute;
+  display: block;
 }
 
-/* mouse over link */
-a:hover {
-  color: black;
-  text-decoration: none;
+/* DESKTOP SIZES */
+.casestudies {
+  top: 166px;
+  left: 641px;
+  width: 331px;
+  height: 237px;
 }
 
-/* selected link */
-a:active {
-  color: black;
-  text-decoration: none;
+.mockups {
+  top: 697px;
+  left: 681px;
+  width: 252px;
+  height: 249px;
 }
+
+.yourstruly {
+  top: 355px;
+  left: 1164px;
+  width: 302px;
+  height: 328px;
+}
+
+.webdesign {
+  top: 193px;
+  left: 1642px;
+  width: 314px;
+  height: 216px;
+}
+
+.credentials {
+  top: 701px;
+  left: 1657px;
+  width: 299px;
+  height: 255px;
+}
+
+/* MAKE THE LINK ZONES SCALE DOWN ON SMALLER SCREENS */
+@media (max-width: 768px) {
+  .casestudies {
+    top: 80px;
+    left: 140px;
+    width: 150px;
+    height: 110px;
+  }
+
+  .mockups {
+    top: 320px;
+    left: 140px;
+    width: 130px;
+    height: 130px;
+  }
+
+  .yourstruly {
+    top: 180px;
+    left: 310px;
+    width: 140px;
+    height: 150px;
+  }
+
+  .webdesign {
+    top: 90px;
+    left: 500px;
+    width: 150px;
+    height: 110px;
+  }
+
+  .credentials {
+    top: 330px;
+    left: 500px;
+    width: 140px;
+    height: 130px;
+  }
+}
+
+/* OPTIONAL: REMOVE LINK UNDERLINES ETC */
 a {
-  width: 150px;
-  height: 150px;
+  text-decoration: none;
+  color: inherit;
 }
-
