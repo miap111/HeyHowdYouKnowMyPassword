@@ -2,23 +2,21 @@
   box-sizing: border-box;
 }
 
-body {
+html, body {
   margin: 0;
   padding: 0;
   background-color: #eae8eb;
   font-family: sans-serif;
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  min-height: 100vh;
+  width: 100%;
+  max-width: 100%;
   overflow-x: hidden;
 }
 
-img.map-img {
-  width: 100%;
-  max-width: 1000px; /* You can adjust this to your design size */
-  height: auto;
+.map-img {
   display: block;
-  margin: 20px auto;
-  padding: 0 10px;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 20px 0;
 }
